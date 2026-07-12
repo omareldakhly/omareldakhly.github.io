@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI Automation Specialist building custom AI agents and automation systems that reduce manual work, prevent missed leads, improve response times, and help businesses scale.">
+  <meta name="author" content="Omar Mohamed">
+  <meta name="robots" content="index, follow">
+
+  <!-- After GitHub Pages deployment, replace FINAL_PUBLIC_PORTFOLIO_URL with the live portfolio URL. -->
+  <!-- After deployment, replace ABSOLUTE_PUBLIC_OG_IMAGE_URL with an absolute public 1200x630 preview image URL. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Omar Mohamed | AI Automation Specialist">
+  <meta property="og:description" content="Custom AI agents and automation systems for lead management, customer support, content workflows, CRM operations, and business automation.">
+  <meta property="og:image" content="ABSOLUTE_PUBLIC_OG_IMAGE_URL">
+  <meta property="og:url" content="FINAL_PUBLIC_PORTFOLIO_URL">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Omar Mohamed | AI Automation Specialist">
+  <meta name="twitter:description" content="Custom AI agents and automation systems that help businesses reduce manual work, respond faster, and prevent missed leads.">
+  <meta name="twitter:image" content="ABSOLUTE_PUBLIC_OG_IMAGE_URL">
+
+  <title>Omar Mohamed | AI Automation Specialist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Reusable SVG icons -->
+  <svg aria-hidden="true" class="svg-sprite" focusable="false">
+    <symbol id="icon-arrow" viewBox="0 0 24 24">
+      <path d="M5 12h14M13 6l6 6-6 6"></path>
+    </symbol>
+    <symbol id="icon-send" viewBox="0 0 24 24">
+      <path d="m22 2-7 20-4-9-9-4 20-7Z"></path>
+      <path d="M22 2 11 13"></path>
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24">
+      <path d="M4 6h16v12H4z"></path>
+      <path d="m4 7 8 6 8-6"></path>
+    </symbol>
+    <symbol id="icon-github" viewBox="0 0 24 24">
+      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3-.3 6.1-1.5 6.1-6.7a5.2 5.2 0 0 0-1.4-3.6 4.8 4.8 0 0 0-.1-3.6s-1.1-.3-3.6 1.4a12.4 12.4 0 0 0-6.6 0C7 1.3 5.9 1.6 5.9 1.6a4.8 4.8 0 0 0-.1 3.6 5.2 5.2 0 0 0-1.4 3.6c0 5.2 3.1 6.4 6.1 6.7a3 3 0 0 0-.8 1.8V22"></path>
+    </symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24">
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V9h4v2"></path>
+      <path d="M2 9h4v12H2z"></path>
+      <circle cx="4" cy="4" r="2"></circle>
+    </symbol>
+    <symbol id="icon-play" viewBox="0 0 24 24">
+      <path d="M8 5v14l11-7-11-7Z"></path>
+    </symbol>
+    <symbol id="icon-workflow" viewBox="0 0 24 24">
+      <path d="M6 4v6m0 0h6m-6 0H3m9 0v10m0 0h6m-6 0H9m9-10h3m-3 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM6 20a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+    </symbol>
+    <symbol id="icon-bot" viewBox="0 0 24 24">
+      <path d="M12 8V4"></path>
+      <rect x="5" y="8" width="14" height="12" rx="3"></rect>
+      <path d="M9 13h.01M15 13h.01M9 17h6"></path>
+    </symbol>
+    <symbol id="icon-table" viewBox="0 0 24 24">
+      <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+      <path d="M3 10h18M9 4v16"></path>
+    </symbol>
+    <symbol id="icon-headset" viewBox="0 0 24 24">
+      <path d="M4 13a8 8 0 0 1 16 0"></path>
+      <path d="M4 13v4a2 2 0 0 0 2 2h2v-8H6a2 2 0 0 0-2 2Zm16 0v4a2 2 0 0 1-2 2h-2v-8h2a2 2 0 0 1 2 2Z"></path>
+      <path d="M16 19c0 1.1-1.8 2-4 2"></path>
+    </symbol>
+    <symbol id="icon-user" viewBox="0 0 24 24">
+      <path d="M20 21a8 8 0 0 0-16 0"></path>
+      <circle cx="12" cy="7" r="4"></circle>
+    </symbol>
+    <symbol id="icon-message" viewBox="0 0 24 24">
+      <path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.7 8.7 0 0 1-3.7-.8L3 21l1.8-5A8.3 8.3 0 1 1 21 11.5Z"></path>
+      <path d="M8 10h8M8 14h5"></path>
+    </symbol>
+  </svg>
+
+  <!-- Header / Navbar -->
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Omar Mohamed portfolio home">
+        <span class="brand-mark">OM</span>
+        <span class="brand-copy">
+          <strong>Omar Mohamed</strong>
+          <span>AI Automation Specialist</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-panel" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#audience">Who I Help</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="https://wa.me/201127154991?text=Hi%20Omar%2C%20I%20want%20a%20free%20automation%20review%20for%20my%20business." target="_blank" rel="noopener noreferrer">
+          <span>Let's Work Together</span>
+          <svg><use href="#icon-send"></use></svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero section" aria-labelledby="hero-title">
+      <div class="hero-grid container">
+        <div class="hero-content reveal">
+          <p class="section-kicker">AI AUTOMATION SPECIALIST</p>
+          <span class="availability-badge">Available for AI Automation Projects</span>
+          <h1 id="hero-title">Transform Your Business Operations With Custom AI Agents &amp; Automation</h1>
+          <p class="hero-text">
+            I build intelligent systems that eliminate 80% of manual work, prevent missed
+            leads, and scale your revenue 24/7.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/201127154991?text=Hi%20Omar%2C%20I%20want%20a%20free%20automation%20review%20for%20my%20business." target="_blank" rel="noopener noreferrer">
+              <svg><use href="#icon-message"></use></svg>
+              <span>Book a Free Automation Review</span>
+            </a>
+            <a class="btn btn-secondary" href="#projects">
+              <svg><use href="#icon-arrow"></use></svg>
+              <span>View Case Studies</span>
+            </a>
+          </div>
+          <ul class="tool-badges" aria-label="Core tools and platforms">
+            <li>Make.com</li>
+            <li>OpenAI</li>
+            <li>Custom AI Agents</li>
+            <li>WhatsApp Automation</li>
+            <li>CRM Integrations</li>
+          </ul>
+        </div>
+
+        <div class="hero-portrait reveal">
+          <div class="portrait-frame">
+            <img src="assets/omar-mohamed-portrait.png" alt="Omar Mohamed, AI Automation Specialist">
+          </div>
+          <div class="portrait-card" aria-label="Positioning">
+            <span>Specialized in</span>
+            <strong>AI Agents + No-Code Workflows</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section class="section audience" id="audience" aria-labelledby="audience-title">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="section-kicker">Who I Help</p>
+          <h2 id="audience-title">Who I Help</h2>
+          <p class="section-subtitle">
+            I build automation systems for businesses that want faster operations,
+            better follow-up, and less manual work.
+          </p>
+        </div>
+
+        <div class="audience-grid">
+          <article class="audience-card reveal">
+            <span class="icon-box"><svg><use href="#icon-message"></use></svg></span>
+            <h3>E-commerce Stores</h3>
+            <p>Automated customer qualification, order updates, instant replies, and lead follow-up.</p>
+          </article>
+          <article class="audience-card reveal">
+            <span class="icon-box"><svg><use href="#icon-table"></use></svg></span>
+            <h3>Finance &amp; Operations Teams</h3>
+            <p>Document data extraction from invoices, PDFs, emails, and spreadsheets to reduce manual admin work.</p>
+          </article>
+          <article class="audience-card reveal">
+            <span class="icon-box"><svg><use href="#icon-play"></use></svg></span>
+            <h3>Agencies &amp; Content Creators</h3>
+            <p>Content repurposing, automated social publishing, and content workflow organization.</p>
+          </article>
+          <article class="audience-card reveal">
+            <span class="icon-box"><svg><use href="#icon-workflow"></use></svg></span>
+            <h3>Service Businesses &amp; Consultants</h3>
+            <p>Client intake, booking requests, CRM updates, proposals, and follow-up automation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="section-heading reveal">
+          <span class="icon-box">
+            <svg><use href="#icon-user"></use></svg>
+          </span>
+          <p class="section-kicker">About Me</p>
+          <h2 id="about-title">Turning Ideas into Intelligent Automation.</h2>
+        </div>
+        <div class="about-copy reveal">
+          <p>
+            I'm Omar Mohamed, an AI Automation Specialist who helps businesses streamline
+            operations and scale efficiently through smart automation and AI.
+          </p>
+          <p>
+            I combine no-code tools like Make.com with AI capabilities to build robust
+            workflows that handle repetitive tasks, capture leads, and deliver real business value.
+          </p>
+          <p>
+            My focus is simple: save time, reduce manual work, and help teams focus on
+            what matters most.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills / Expertise Section -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="section-kicker">Skills &amp; Expertise</p>
+          <h2 id="skills-title">What I Do Best</h2>
+        </div>
+
+        <div class="tech-stack-grid">
+          <article class="tech-stack-card reveal">
+            <span class="icon-box"><svg><use href="#icon-workflow"></use></svg></span>
+            <h3>Automation Architecture</h3>
+            <ul class="stack-list">
+              <li>Make.com</li>
+              <li>Advanced Webhooks</li>
+            </ul>
+          </article>
+          <article class="tech-stack-card reveal">
+            <span class="icon-box"><svg><use href="#icon-bot"></use></svg></span>
+            <h3>AI Engineering</h3>
+            <ul class="stack-list">
+              <li>OpenAI APIs</li>
+              <li>Custom AI Agents</li>
+              <li>Prompt Engineering</li>
+            </ul>
+          </article>
+          <article class="tech-stack-card reveal">
+            <span class="icon-box"><svg><use href="#icon-table"></use></svg></span>
+            <h3>Data &amp; CRM Integrations</h3>
+            <ul class="stack-list">
+              <li>Google Workspace</li>
+              <li>CRMs</li>
+              <li>Databases</li>
+              <li>REST APIs</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="section-kicker">Case Studies</p>
+          <h2 id="projects-title">Featured Case Studies</h2>
+          <p class="section-subtitle">Practical automation projects designed to solve real business problems.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-visual" aria-hidden="true">
+              <span class="project-label">Content Automation</span>
+              <div class="workflow-map">
+                <span class="workflow-node node-source">
+                  <svg><use href="#icon-play"></use></svg>
+                  YouTube
+                </span>
+                <i class="workflow-connector"></i>
+                <span class="workflow-node node-ai">
+                  <svg><use href="#icon-bot"></use></svg>
+                  AI Summary
+                </span>
+                <i class="workflow-connector"></i>
+                <span class="workflow-node node-output">
+                  <svg><use href="#icon-send"></use></svg>
+                  Multi-platform Content
+                </span>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="case-category">Content Automation</span>
+              <h3>YouTube Content Repurposing Bot</h3>
+              <div class="case-study-points">
+                <div>
+                  <strong>The Challenge</strong>
+                  <p>Content creators and agencies often spend too much time turning one piece of content into multiple posts, summaries, and platform-specific drafts.</p>
+                </div>
+                <div>
+                  <strong>The AI Solution</strong>
+                  <p>An AI automation workflow that takes a YouTube video URL, processes the content, summarizes the main topic, and prepares reusable content for multiple platforms.</p>
+                </div>
+                <div>
+                  <strong>The Result</strong>
+                  <p>Instant content preparation workflows, faster publishing operations, and 15+ hours saved weekly per content team member.</p>
+                </div>
+              </div>
+              <div class="tool-list" aria-label="Project tools">
+                <span>Make.com</span>
+                <span>OpenAI</span>
+                <span>Google Sheets</span>
+                <span>Telegram</span>
+                <span>Gmail</span>
+                <span>Facebook</span>
+              </div>
+              <div class="card-actions">
+                <a class="btn btn-small btn-outline" href="https://github.com/omareldakhly/AI-YouTube-Content-Repurposing-Publishing-Bot" target="_blank" rel="noopener noreferrer" aria-label="View YouTube Content Repurposing Bot on GitHub">
+                  <svg><use href="#icon-github"></use></svg>
+                  <span>View on GitHub</span>
+                </a>
+                <a class="btn btn-small btn-outline" href="https://github.com/omareldakhly/AI-YouTube-Content-Repurposing-Publishing-Bot/blob/main/CASE_STUDY.md" target="_blank" rel="noopener noreferrer" aria-label="Read YouTube Content Repurposing Bot case study">Case Study</a>
+                <a class="btn btn-small btn-outline" href="https://youtu.be/j88-zAzorkQ?si=i4Aovp2OzlmnuZ-l" target="_blank" rel="noopener noreferrer" aria-label="Watch YouTube Content Repurposing Bot demo on YouTube">
+                  <svg><use href="#icon-play"></use></svg>
+                  <span>Watch Demo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual" aria-hidden="true">
+              <span class="project-label">Lead Automation</span>
+              <div class="workflow-map workflow-map-split">
+                <span class="workflow-node node-source">
+                  <svg><use href="#icon-message"></use></svg>
+                  WhatsApp / Telegram
+                </span>
+                <i class="workflow-connector"></i>
+                <span class="workflow-node node-ai">
+                  <svg><use href="#icon-bot"></use></svg>
+                  OpenAI
+                </span>
+                <i class="workflow-connector"></i>
+                <span class="workflow-node node-output">
+                  <svg><use href="#icon-table"></use></svg>
+                  CRM / Sheets
+                </span>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="case-category">Lead Automation</span>
+              <h3>AI WhatsApp &amp; Telegram Lead Intake Agent</h3>
+              <div class="case-study-points">
+                <div>
+                  <strong>The Challenge</strong>
+                  <p>Businesses can miss potential customers when messages come from different channels like WhatsApp and Telegram and are handled manually.</p>
+                </div>
+                <div>
+                  <strong>The AI Solution</strong>
+                  <p>An AI-powered workflow captures WhatsApp and Telegram messages, analyzes customer intent, saves lead data into Google Sheets or CRM, and notifies the team instantly.</p>
+                </div>
+                <div>
+                  <strong>The Result</strong>
+                  <p>Instant 5-second response times, cleaner lead handoff, and 15+ hours saved weekly per employee.</p>
+                </div>
+              </div>
+              <div class="tool-list" aria-label="Project tools">
+                <span>Make.com</span>
+                <span>OpenAI</span>
+                <span>Google Sheets</span>
+                <span>WhatsApp</span>
+                <span>Telegram</span>
+                <span>CRM</span>
+              </div>
+              <div class="card-actions">
+                <a class="btn btn-small btn-outline" href="https://github.com/omareldakhly/AI-WhatsApp-Telegram-Lead-Intake-Agent" target="_blank" rel="noopener noreferrer" aria-label="View AI WhatsApp and Telegram Lead Intake Agent on GitHub">
+                  <svg><use href="#icon-github"></use></svg>
+                  <span>View on GitHub</span>
+                </a>
+                <a class="btn btn-small btn-outline" href="https://github.com/omareldakhly/AI-WhatsApp-Telegram-Lead-Intake-Agent/blob/main/CASE_STUDY.md" target="_blank" rel="noopener noreferrer" aria-label="Read AI WhatsApp and Telegram Lead Intake Agent case study">Case Study</a>
+                <a class="btn btn-small btn-outline" href="https://www.linkedin.com/posts/omar-mohamed-267361418_aiautomation-makeautomation-openai-share-7481024805652180992-BSUd/" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn post for AI WhatsApp and Telegram Lead Intake Agent">
+                  <svg><use href="#icon-linkedin"></use></svg>
+                  <span>LinkedIn Post</span>
+                </a>
+                <a class="btn btn-small btn-outline" href="https://youtube.com/shorts/cZs-OTKscF8?feature=share" target="_blank" rel="noopener noreferrer" aria-label="Watch YouTube demo for AI WhatsApp and Telegram Lead Intake Agent">
+                  <svg><use href="#icon-play"></use></svg>
+                  <span>Watch Demo</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Demo Section -->
+    <section class="section video-demo" id="demo" aria-labelledby="demo-title">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="section-kicker">Video Demo</p>
+          <h2 id="demo-title">See My Automation Work in Action</h2>
+          <p class="section-subtitle">See how I explain a practical AI automation system from customer message to qualified lead.</p>
+        </div>
+
+        <div class="video-card reveal">
+          <div class="video-preview" aria-hidden="true">
+            <span class="video-play"><svg><use href="#icon-play"></use></svg></span>
+          </div>
+          <div class="video-copy">
+            <h3>Watch Automation Demo</h3>
+            <p>See how I explain practical AI automation workflows for business use cases.</p>
+            <a class="btn btn-primary video-cta" href="https://youtube.com/shorts/cZs-OTKscF8?feature=share" target="_blank" rel="noopener noreferrer">
+              <svg><use href="#icon-play"></use></svg>
+              <span>Watch on YouTube</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="section-kicker">Services</p>
+          <h2 id="services-title">How I Can Help Your Business</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <span class="icon-box"><svg><use href="#icon-workflow"></use></svg></span>
+            <h3>AI Automation Workflow Design</h3>
+            <p>Custom workflows for service businesses, e-commerce, and sales teams that connect tools and reduce repetitive manual work.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="icon-box"><svg><use href="#icon-workflow"></use></svg></span>
+            <h3>Lead Generation Automation</h3>
+            <p>Automated lead qualification for e-commerce, consultants, and sales teams so follow-up becomes faster.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="icon-box"><svg><use href="#icon-headset"></use></svg></span>
+            <h3>AI Customer Support Automation</h3>
+            <p>AI integrations for customer support teams that answer common questions and support customers faster.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="icon-box"><svg><use href="#icon-play"></use></svg></span>
+            <h3>Content Repurposing Automation</h3>
+            <p>Content repurposing for agencies and creators turning long-form content into posts, summaries, and drafts.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="icon-box"><svg><use href="#icon-table"></use></svg></span>
+            <h3>CRM &amp; Google Sheets Automation</h3>
+            <p>Document data extraction, spreadsheet updates, reporting, and handoffs for operations and finance teams.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="icon-box"><svg><use href="#icon-bot"></use></svg></span>
+            <h3>AI Agent Workflow Planning</h3>
+            <p>Plan AI agents that qualify leads, analyze requests, extract data, and trigger the right next actions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section process" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="section-kicker">Process</p>
+          <h2 id="process-title">My 5-Step Automation Process</h2>
+        </div>
+
+        <div class="process-timeline">
+          <article class="process-step reveal">
+            <span class="step-number">1</span>
+            <h3>Understand</h3>
+            <p>I learn about your business, tools, repetitive tasks, and workflow problems.</p>
+          </article>
+          <article class="process-step reveal">
+            <span class="step-number">2</span>
+            <h3>Map</h3>
+            <p>I map the workflow and identify where automation can save time.</p>
+          </article>
+          <article class="process-step reveal">
+            <span class="step-number">3</span>
+            <h3>Build</h3>
+            <p>I build the automation using Make.com, OpenAI, and the right business tools.</p>
+          </article>
+          <article class="process-step reveal">
+            <span class="step-number">4</span>
+            <h3>Test &amp; Optimize</h3>
+            <p>I test the workflow, fix edge cases, and improve reliability.</p>
+          </article>
+          <article class="process-step reveal">
+            <span class="step-number">5</span>
+            <h3>Deliver &amp; Support</h3>
+            <p>I deliver the solution with clear documentation and optional support.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <p class="section-kicker">FAQ</p>
+          <h2 id="faq-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list reveal">
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Will I need to pay for extra tool subscriptions?</span>
+              <svg><use href="#icon-arrow"></use></svg>
+            </button>
+            <div class="faq-answer">
+              <p>I optimize your setups using efficient webhooks and native logic to keep tool usage costs minimal. We will review any external subscription fees during our discovery call.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>How secure is my business and customer data?</span>
+              <svg><use href="#icon-arrow"></use></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Privacy is a priority. All automated data pipelines are securely encrypted and comply strictly with standard API authentication protocols.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>What happens if an API or workflow breaks later?</span>
+              <svg><use href="#icon-arrow"></use></svg>
+            </button>
+            <div class="faq-answer">
+              <p>All systems are built with error-handling logic. I also offer dedicated post-launch support blueprints to monitor and update pipelines seamlessly.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-panel reveal">
+        <div class="contact-intro">
+          <span class="contact-icon"><svg><use href="#icon-send"></use></svg></span>
+          <div>
+            <p class="section-kicker">Contact</p>
+            <h2 id="contact-title">Book a Free 15-Minute Automation Discovery Call</h2>
+            <p>
+              Let's analyze your current workflow and map out exactly where AI can save
+              you time and money.
+            </p>
+            <a class="btn btn-primary contact-primary calendly-button" href="https://calendly.com/omareldakhly20/free-15-minute-automation-discovery-call" target="_blank" rel="noopener noreferrer" aria-label="Schedule your free 15-minute automation discovery call on Calendly">
+              <svg><use href="#icon-arrow"></use></svg>
+              <span>Schedule Your Free 15-Min Call</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-side" aria-label="Direct contact options">
+          <div class="email-option">
+            <div>
+              <span class="email-label">Prefer email?</span>
+              <strong>Send a direct project inquiry</strong>
+            </div>
+            <div class="email-copy-row">
+              <span class="email-text">omareldakhly20@gmail.com</span>
+              <button class="copy-email" type="button" data-email="omareldakhly20@gmail.com" aria-label="Copy Omar Mohamed email address">Copy Email</button>
+              <span class="copy-status" role="status" aria-live="polite"></span>
+            </div>
+          </div>
+
+          <div class="contact-grid" aria-label="Contact links">
+            <a class="contact-card" href="https://www.linkedin.com/in/omar-mohamed-267361418/" target="_blank" rel="noopener noreferrer" aria-label="Connect with Omar Mohamed on LinkedIn">
+              <svg><use href="#icon-linkedin"></use></svg>
+              <span>
+                <strong>LinkedIn</strong>
+                View Profile
+              </span>
+            </a>
+            <a class="contact-card" href="https://github.com/omareldakhly" target="_blank" rel="noopener noreferrer" aria-label="View Omar Mohamed on GitHub">
+              <svg><use href="#icon-github"></use></svg>
+              <span>
+                <strong>GitHub</strong>
+                View Projects
+              </span>
+            </a>
+            <a class="contact-card" href="https://mail.google.com/mail/?view=cm&fs=1&to=omareldakhly20@gmail.com&su=AI%20Automation%20Project%20Inquiry" target="_blank" rel="noopener noreferrer" aria-label="Send Omar Mohamed an email">
+              <svg><use href="#icon-mail"></use></svg>
+              <span>
+                <strong>Email</strong>
+                Send Email
+              </span>
+            </a>
+            <a class="contact-card" href="https://wa.me/201127154991?text=Hi%20Omar%2C%20I%20want%20a%20free%20automation%20review%20for%20my%20business." target="_blank" rel="noopener noreferrer" aria-label="Contact Omar Mohamed on WhatsApp">
+              <svg><use href="#icon-message"></use></svg>
+              <span>
+                <strong>WhatsApp</strong>
+                Message Me
+              </span>
+            </a>
+            <a class="contact-card telegram-card" href="https://t.me/omar_m2000" target="_blank" rel="noopener noreferrer" aria-label="Message Omar Mohamed on Telegram">
+              <svg><use href="#icon-send"></use></svg>
+              <span>
+                <strong>Telegram</strong>
+                Message Me
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand-mark">OM</span>
+        <span class="brand-copy">
+          <strong>Omar Mohamed</strong>
+          <span>AI Automation Specialist</span>
+        </span>
+      </a>
+      <p>&copy; 2026 Omar Mohamed. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="https://www.linkedin.com/in/omar-mohamed-267361418/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg><use href="#icon-linkedin"></use></svg><span>LinkedIn</span></a></li>
+        <li><a href="https://github.com/omareldakhly" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg><use href="#icon-github"></use></svg><span>GitHub</span></a></li>
+        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=omareldakhly20@gmail.com&su=AI%20Automation%20Project%20Inquiry" target="_blank" rel="noopener noreferrer" aria-label="Email"><svg><use href="#icon-mail"></use></svg><span>Email</span></a></li>
+        <li><a href="https://wa.me/201127154991?text=Hi%20Omar%2C%20I%20want%20a%20free%20automation%20review%20for%20my%20business." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg><use href="#icon-message"></use></svg><span>WhatsApp</span></a></li>
+        <li><a href="https://t.me/omar_m2000" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><svg><use href="#icon-send"></use></svg><span>Telegram</span></a></li>
+      </ul>
+      <a class="back-to-top" href="#top" aria-label="Back to top">
+        <svg><use href="#icon-arrow"></use></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
