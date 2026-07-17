@@ -92,6 +92,15 @@ https://github.com/omareldakhly/AI-WhatsApp-Telegram-Lead-Intake-Agent
 
 AI WhatsApp & Telegram Case Study:
 https://github.com/omareldakhly/AI-WhatsApp-Telegram-Lead-Intake-Agent/blob/main/CASE_STUDY.md
+
+AI Freelance Opportunity Radar:
+https://github.com/omareldakhly/ai-freelance-opportunity-radar
+
+AI Freelance Opportunity Radar LinkedIn Post:
+https://www.linkedin.com/feed/update/urn:li:activity:7483526725516107777/
+
+AI Freelance Opportunity Radar YouTube Demo:
+YOUTUBE_VIDEO_URL
 ```
 
 If a project repository changes later, open `index.html`, search for the project title, and update the related button `href` values.
